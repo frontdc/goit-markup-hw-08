@@ -1,0 +1,29 @@
+.social-networks__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: var(--default-icons-color);
+    background-color: var(--white-color);
+
+    transition: background-color var(--transition-dur-and-func),
+        color var(--transition-dur-and-func);
+
+
+
+
+    &:hover,
+    &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    }
+}
+
+.social-networks__icon {
+    fill: currentColor;
+}
