@@ -20,6 +20,7 @@
 
 <body>
     <!--Хедер-->
+    <!--Хедер-->
     <header class="page-header">
         <!--Панель навигации в хедере-->
         <div class="container page-header--flex">
@@ -45,6 +46,11 @@
                         </svg>+38 096 111 11 11</a></li>
             </ul>
     
+            <button class="burger-button" type="button">
+                <svg class="burger-button__icon" height="40px" width="40px">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
     
     </header>
@@ -273,7 +279,7 @@
 
             <!--ОбЪединяю все контакты в один список, так как это однотипный контент-->
             <address>
-                <ul>
+                <ul class="address__list">
                     <li class="address__item">
                         <a class="address__contacts-link" href="">м. Київ, пр-т Лесі Українки, 26</a>
                     </li>
