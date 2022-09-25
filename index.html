@@ -44,6 +44,11 @@
       </svg>+38 096 111 11 11</a></li>
     </ul>
     
+    <button class="burger-button" type="button">
+      <svg class="burger-button__icon" height="40px" width="40px">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>    
     </div>
 
   </header>
@@ -172,7 +177,8 @@
 
             <img 
               src="./images/igor.jpg" 
-              alt="Ігор Дем'яненко" 
+              alt="Ігор Дем'яненко"
+              class="team__img" 
               width="270"
               height="260">
             <h3 class="team-card__member-name">Ігор Дем'яненко</h3>
@@ -221,6 +227,7 @@
             <img 
               src="./images/olga.jpg" 
               alt="Ольга Рєпіна" 
+              class="team__img"
               width="270"
               height="260">
             <h3 class="team-card__member-name">Ольга Рєпіна</h3>
@@ -270,7 +277,8 @@
           
             <img 
               src="./images/mikola.jpg" 
-              alt="Микола Тарасов" 
+              alt="Микола Тарасов"
+              class="team__img" 
               width="270"
               height="260">
             <h3 class="team-card__member-name">Микола Тарасов</h3>
@@ -321,6 +329,7 @@
             <img 
               src="./images/mikhaylo.jpg" 
               alt="Михайло Єрмаков" 
+              class="team__img"
               width="270"
               height="260">
             <h3 class="team-card__member-name">Михайло Єрмаков</h3>
@@ -434,7 +443,7 @@
   
         <!--ОбЪединяю все контакты в один список, так как это однотипный контент-->
         <address>
-          <ul>
+          <ul class="address__list">
             <li class="address__item">
               <a class="address__contacts-link" href="">м. Київ, пр-т Лесі Українки, 26</a>
             </li>
