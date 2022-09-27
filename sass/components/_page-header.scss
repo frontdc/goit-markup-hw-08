@@ -151,11 +151,12 @@
         .contacts-menu {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            align-items: start;
             justify-content: center;
     
             margin-right: 0;
-            margin-left: 0;
+            margin-left: auto;
             
         }
     
@@ -192,6 +193,7 @@
             &:focus,
             {
             color: var(--accent-color);
+            
     
         }
     }
@@ -224,9 +226,13 @@
     .contacts-menu__link {
         letter-spacing: 0.02em;
         font-weight: 500;
+
+
         color: var(--secondary-txt-color);
     
         display: flex;
+        margin-bottom: 10px;
+       
         align-items: center;
     
         transition: color var(--transition-dur-and-func);
@@ -235,6 +241,7 @@
         &:focus {
             color: var(--accent-color);
         }
+
     
     
     }
@@ -265,6 +272,7 @@
 
 .contacts-menu {
     display: flex;
+    flex-direction: row;
     align-items: center;
 
     margin-left: auto;

@@ -260,10 +260,11 @@ button {
   .contacts-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: start;
     justify-content: center;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: auto;
   }
   .burger-button {
     display: none;
@@ -311,6 +312,7 @@ button {
     font-weight: 500;
     color: var(--secondary-txt-color);
     display: flex;
+    margin-bottom: 10px;
     align-items: center;
     transition: color var(--transition-dur-and-func);
   }
@@ -338,6 +340,7 @@ button {
   }
   .contacts-menu {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-left: auto;
   }
@@ -1771,6 +1774,44 @@ button {
     cursor: pointer;
   }
 }
+@media screen and (min-width: 768px) {
+  .filter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    column-gap: 8px;
+    row-gap: 0;
+    margin-bottom: 50px;
+  }
+  .filter-buttons button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--primary-txt-color);
+    background-color: var(--grey-bg-color);
+    border-radius: 4px;
+    padding: 6px 22px;
+  }
+  .button.current-btn {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    padding: 6px 25px;
+  }
+  .button {
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
+  }
+  .button:hover, .button:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
+}
 @media screen and (min-width: 1200px) {
   .filter-buttons {
     display: flex;
@@ -1845,6 +1886,77 @@ button {
     font-size: 18px;
     line-height: 1.5;
     padding: 77px 24px;
+    overflow: auto;
+    transform: translateY(101%);
+    transition: transform var(--transition-dur-and-func);
+  }
+  .portfolio-link:hover .portfolio-card-overlay,
+.portfolio-link:focus .portfolio-card-overlay {
+    transform: translateY(0%);
+  }
+  .portfolio-link {
+    display: block;
+    transition: box-shadow var(--transition-dur-and-func);
+  }
+  .portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  .card-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-txt-color);
+    margin-bottom: 4px;
+    padding-left: 24px;
+    padding-top: 20px;
+  }
+  .card-text {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--secondary-txt-color);
+    padding-bottom: 20px;
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+  }
+  .portfolio-card {
+    background: var(--white-color);
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    width: 354px;
+  }
+  .card-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 370px;
+    height: 294px;
+    object-fit: cover;
+  }
+  .portfolio-card-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio-card-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    color: var(--white-color);
+    background-color: var(--card-overlay-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 63px 24px;
     overflow: auto;
     transform: translateY(101%);
     transition: transform var(--transition-dur-and-func);
