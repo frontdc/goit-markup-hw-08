@@ -60,22 +60,30 @@
 
 
 @media screen and (min-width: 768px) {
-    .pecularities__list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-        width: 100%;
-        
-        gap: 30px;
+// .pecularities {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     column-count: 2;
+//     width: 100%;
+    
+// }
 
-        margin-top: 0;
+    .pecularities__list {
+            height: 540px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 30px;
+            
 
     }
 
     .pecularities__item {
         flex-basis: calc((100% - 90px) / 4);
-        widt: 354px;
+        width: 354px;
+        
         
 
 
@@ -127,6 +135,8 @@
     column-gap: 30px;
 
     margin-top: 0;
+
+    height: auto;
 
 }
 

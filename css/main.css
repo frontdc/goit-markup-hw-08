@@ -537,6 +537,152 @@ button {
     fill: currentColor;
   }
 }
+@media screen and (min-width: 768px) {
+  .page-footer {
+    background-color: var(--secondary-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  address .address__link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--white-color);
+  }
+  address .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .address__list {
+    margin-bottom: 60px;
+  }
+  .address__contacts-link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--white-color);
+  }
+  .address__contacts-link:visited {
+    color: var(--white-color);
+  }
+  .address__contacts-link--rgba {
+    color: var(--footer-rgba-color);
+    letter-spacing: 0.02em;
+    transition: color var(--transition-dur-and-func);
+  }
+  .address__contacts-link--rgba:hover,
+.address__contacts-link--rgba:focus {
+    color: var(--accent-color);
+  }
+  .page-footer--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .page-footer__div-address {
+    margin-right: 165px;
+    margin-left: 76px;
+    text-align: center;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+  .join-us__text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .join-us__social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--white-color);
+  }
+  .join-us__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: var(--footer-social-icons);
+    transition: background-color var(--transition-dur-and-func);
+    margin-bottom: 60px;
+  }
+  .join-us__social-link:hover, .join-us__social-link:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+  .subscribe-form {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe-form__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .subscribe-form__input {
+    width: 450px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    padding: 16px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--white-color);
+    margin-bottom: 20px;
+  }
+  .subscribe-form__input::placeholder {
+    color: var(--footer-rgba-color);
+  }
+  .subscribe-form__submit-button {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+    margin-left: 0px;
+    text-align: left;
+    width: 200px;
+    height: 50px;
+    transition: background-color var(--transition-dur-and-func);
+  }
+  .subscribe-form__submit-button:focus, .subscribe-form__submit-button:hover {
+    background-color: var(--mbutton-hover);
+    cursor: pointer;
+  }
+  .subscribe-form__svg {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    margin-left: 10px;
+    fill: currentColor;
+  }
+}
 @media screen and (min-width: 1200px) {
   .page-footer {
     background-color: var(--secondary-bg-color);
@@ -878,16 +1024,16 @@ button {
 }
 @media screen and (min-width: 768px) {
   .pecularities__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    height: 540px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
-    margin-top: 0;
   }
   .pecularities__item {
     flex-basis: calc((100% - 90px) / 4);
-    widt: 354px;
+    width: 354px;
   }
   .pecularities__icon-wrapper {
     display: flex;
@@ -916,6 +1062,7 @@ button {
     flex-direction: row;
     column-gap: 30px;
     margin-top: 0;
+    height: auto;
   }
   .pecularities__item {
     flex-basis: calc((100% - 90px) / 4);
@@ -1030,6 +1177,56 @@ button {
   .team__img {
     width: 450px;
     height: 460px;
+    object-fit: cover;
+  }
+  .team-card__member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .team-card__job-title {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondary-txt-color);
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }
+  .team-card__social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--default-icons-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    background-color: var(--grey-bg-color);
+  }
+  .team li {
+    background-color: var(--white-color);
+  }
+  .team__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1108px;
+    gap: 30px;
+  }
+  .team__card {
+    flex-basis: calc((100% - 90px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 30px;
+    width: 354px;
+  }
+  .team__img {
+    width: 354px;
+    height: 374px;
   }
   .team-card__member-name {
     font-weight: 500;
@@ -1065,12 +1262,14 @@ button {
     display: flex;
     flex-direction: row;
     column-gap: 30px;
+    height: auto;
   }
   .team__card {
     flex-basis: calc((100% - 90px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-bottom: 30px;
+    height: auto;
   }
   .team__img {
     width: 270px;
