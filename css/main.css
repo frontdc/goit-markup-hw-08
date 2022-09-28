@@ -285,7 +285,7 @@ button {
     margin-bottom: 302px;
   }
   .navigation__item__link {
-    color: var(--promary-txt-color);
+    color: var(--primary-txt-color);
   }
   .navigation__item__link:visited {
     color: inherit;
