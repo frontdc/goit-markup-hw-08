@@ -458,11 +458,11 @@
             
         }
 
-        .navigation__item__link {
+       a .navigation__item__link {
             color: var(--primary-txt-color);
             text-decoration: none;
             font-style: normal;
-            text-decoration-color: inherit;
+            text-decoration-color: var(--primary-txt-color);
             }
 
         
