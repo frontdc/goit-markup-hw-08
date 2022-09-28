@@ -1741,7 +1741,7 @@ address .address__item:not(:last-child) {
 
 .team__img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .team-card__member-name {
