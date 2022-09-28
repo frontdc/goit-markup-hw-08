@@ -1741,7 +1741,6 @@ address .address__item:not(:last-child) {
 
 .team__img {
   width: 100%;
-  height: 460px;
   object-fit: cover;
 }
 
