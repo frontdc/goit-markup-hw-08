@@ -458,6 +458,13 @@
             
         }
 
+        .navigation__item__link {
+            color: var(--primary-txt-color);
+            text-decoration: none;
+            font-style: normal;
+            text-decoration-color: inherit;
+            }
+
         
         .navigation__item__link:visited {
             color: inherit;
