@@ -1,3 +1,90 @@
+.hero {
+    background-color: var(--secondary-bg-color);
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-mobile.jpg');
+    background-size: cover;
+    max-width: 767px;
+
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: url('../images/hero-mobile@2x.jpg');
+    }
+}
+
+
+
+.hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+
+    width: 250px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+
+
+
+
+
+}
+
+.hero__button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px 32px;
+
+    border: 0px;
+
+    transition: background-color var(--transition-dur-and-func);
+
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--mbutton-hover);
+
+        cursor: pointer;
+    }
+}
+
+
+
 @media screen and (min-width: 480px) {
 .hero {
         background-color: var(--secondary-bg-color);
