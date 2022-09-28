@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     column-count: 2;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: start;
     width: 100%;
     
@@ -16,7 +16,7 @@
 }
 
 .clients-list__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     display: flex;
