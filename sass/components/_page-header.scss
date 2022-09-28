@@ -193,6 +193,9 @@
 
 }
 
+.navigation__item__link {
+    color: var(--promary-txt-color);
+}
 
 .navigation__item__link:visited {
     color: inherit;
@@ -553,6 +556,9 @@
     
             margin-right: 0;
             margin-left: auto;
+
+            font-size: 12px;
+            line-height: 1.16;
             
         }
     

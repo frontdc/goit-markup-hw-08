@@ -1,3 +1,60 @@
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+
+    column-gap: 8px;
+    row-gap: 15px;
+
+    margin-bottom: 50px;
+}
+
+
+
+.filter-buttons button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-txt-color);
+    background-color: var(--grey-bg-color);
+
+
+    border-radius: 4px;
+
+    padding: 6px 22px;
+
+
+}
+
+.button.current-btn {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    padding: 6px 25px;
+}
+
+.button {
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
+
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: var(--white-color);
+        background-color: var(--accent-color);
+
+        cursor: pointer;
+    }
+}
+
+
 @media screen and (min-width: 480px) {
     .filter-buttons {
             display: flex;
