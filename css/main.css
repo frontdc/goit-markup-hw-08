@@ -453,11 +453,14 @@ button {
     letter-spacing: 0.02em;
     margin-bottom: 302px;
   }
-  a .navigation__item__link {
+  .navigation__item__link {
     color: var(--primary-txt-color);
     text-decoration: none;
     font-style: normal;
     text-decoration-color: var(--primary-txt-color);
+  }
+  .navigation__item__link -webkit-any-link {
+    color: var(--primary-txt-color);
   }
   .navigation__item__link:visited {
     color: inherit;
