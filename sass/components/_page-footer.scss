@@ -59,7 +59,7 @@ address .address__item:not(:last-child) {
 
     display: flex;
     flex-direction: column;
-
+    
     align-items: center;
 }
 
@@ -151,7 +151,7 @@ address .address__item:not(:last-child) {
 
 .subscribe-form__input {
 
-    width: 100%;
+    width: 285px;
     height: 50px;
 
     background-color: transparent;
@@ -162,6 +162,7 @@ address .address__item:not(:last-child) {
     outline: none;
 
     padding: 16px 15px;
+    
 
 
 
@@ -426,7 +427,7 @@ address .address__item:not(:last-child) {
             border-radius: 4px;
     
             padding: 10px 28px;
-            margin-left: 12px;
+            margin-left: 0px;
     
             text-align: left;
     
@@ -755,6 +756,7 @@ address .address__item:not(:last-child) {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 .page-footer__div-address {
@@ -822,8 +824,8 @@ address .address__item:not(:last-child) {
 .subscribe-form {
     display: block;
    
-    
-    margin-right: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
     
 
 }
